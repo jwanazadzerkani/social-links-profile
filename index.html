@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        src: url('assets/fonts/Inter-VariableFont_slnt.ttf') format('truetype');
+        font-weight: 400 600 700;
+        font-style: normal;
+      }
+
+      :root {
+        --green: hsl(75, 94%, 57%);
+        --white: hsl(0, 0%, 100%);
+        --grey-700: hsl(0, 0%, 20%);
+        --grey-800: hsl(0, 0%, 12%);
+        --grey-900: hsl(0, 0%, 8%);
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        height: 100vh;
+        background-color: var(--grey-900);
+        color: var(--white);
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--grey-800);
+        align-items: center;
+        padding: 40px;
+        box-sizing: border-box;
+        gap: 24px;
+        border-radius: 12px;
+      }
+
+      .image {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px
+      }
+
+      .title-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .name {
+        margin: 0px;
+      }
+
+      .address {
+        color: var(--green);
+        margin: 4px 0px;
+      }
+
+      .description {
+        margin: 0px;
+      }
+
+      .cards-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+      }
+
+      .card {
+        background-color: var(--grey-700);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 12px;
+      }
+
+      .card:hover {
+        background-color: var(--green);
+        color: var(--grey-900);
+      }
+
+      @media (min-width: 1440px) {
+        .container {
+          max-width: 360px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <img src="assets/images/avatar-jessica.jpeg" alt="avatar jessica" class="image">
+      <div class="title-details">
+        <h1 class="name">Jessica Randall</h1>
+        <p class="address">London, United Kingdom</p>
+      </div>
+      <p class="description">"Front-end developer and avid reader."</p>
+      <div class="cards-container">
+        <div class="card"><p>GitHub</p></div>
+        <div class="card"><p>Frontend Mentor</p></div>
+        <div class="card"><p>LinkedIn</p></div>
+        <div class="card"><p>Twitter</p></div>
+        <div class="card"><p>Instagram</p></div>
+      </div>
+    </main>
+  </body>
+</html>
